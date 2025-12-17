@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -101,11 +101,948 @@
             font-weight: bold;
         }
         
+        .grammar-formula {
+            background-color: #E1F5FE;
+            padding: 15px 20px;
+            border-left: 5px solid #0277BD;
+            margin: 20px 0;
+            color: #01579B;
+            font-family: 'Courier New', monospace;
+            font-size: 18px;
+        }
+        
         .example-box {
             background-color: #E8F5E9;
             padding: 12px 20px;
             border-left: 4px solid #2C5F2D;
             margin: 10px 0 10px 40px;
+            color: #2C5F2D;
+            font-size: 15px;
+        }
+        
+        .exercise-section {
+            background-color: #F3E5F5;
+            padding: 25px;
+            border-left: 5px solid #4B0082;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+        
+        .exercise-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4B0082;
+            margin-bottom: 20px;
+        }
+        
+        .answer-key {
+            background-color: #FFEBEE;
+            padding: 15px 25px;
+            border-left: 5px solid #CC0000;
+            margin: 15px 0;
+            color: #CC0000;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        th {
+            background-color: #2E5C8A;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            font-size: 15px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #F5F5F5;
+        }
+        
+        tr:hover {
+            background-color: #E3F2FD;
+        }
+        
+        .expression {
+            font-weight: bold;
+            color: #1F4788;
+            font-size: 16px;
+        }
+        
+        .example {
+            font-style: italic;
+            color: #555;
+        }
+        
+        ol, ul {
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
+        
+        ol li, ul li {
+            margin-bottom: 12px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        
+        .page-break {
+            margin: 60px 0;
+            border-top: 2px dashed #ccc;
+            page-break-after: always;
+        }
+        
+        .highlight {
+            background-color: #FFEB3B;
+            padding: 2px 5px;
+            font-weight: bold;
+        }
+        
+        .underline {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        .check-mark {
+            color: #2C5F2D;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .cross-mark {
+            color: #CC0000;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .prep-section {
+            background-color: #FFF9E6;
+            padding: 20px;
+            margin: 25px 0;
+            border-left: 5px solid #FF9800;
+        }
+        
+        .prep-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #E65100;
+            margin-bottom: 10px;
+        }
+        
+        .prep-meaning {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 12px;
+            font-style: italic;
+        }
+        
+        .homework-box {
+            background-color: #FFF8E1;
+            padding: 30px;
+            border: 3px solid #FFA726;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .homework-title {
+            font-size: 28px;
+            color: #E65100;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                padding: 40px;
+            }
+            
+            .page-break {
+                page-break-after: always;
+                border: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo-title">BEN SIRAN ACADEMY</div>
+            <div class="session-title">Session 1: English Tenses & Practical Usage</div>
+            <div class="student-info">Student: Muhammad | Level: Intermediate</div>
+        </div>
+
+        <!-- Introduction -->
+        <h1>🌟 Welcome to Your English Journey!</h1>
+        <div class="intro-text">
+            In this course, we focus on <strong><em>WHY</em></strong> and <strong><em>WHEN</em></strong> we use each tense, not just the grammar formulas. Understanding the purpose and context of each structure will help you use English naturally and confidently in real conversations.
+        </div>
+
+        <!-- SENTENCE STRUCTURE -->
+        <h1>Basic Sentence Structure</h1>
+        
+        <div class="grammar-formula">
+            SUBJECT (فاعل) + VERB (فعل) + OBJECT (مفعول)
+        </div>
+        
+        <div class="example-box">
+            <span class="check-mark">✓</span> <strong>I</strong> (subject) <strong>called</strong> (verb) <strong>him</strong> (object)
+        </div>
+        <div class="example-box">
+            <span class="check-mark">✓</span> <strong>I</strong> (subject) <strong>read</strong> (verb) <strong>a lot of books</strong> (object)
+        </div>
+
+        <!-- PRESENT SIMPLE -->
+        <h1>1. PRESENT SIMPLE (حال ساده)</h1>
+        
+        <h2>The Purpose: Why Do We Use It?</h2>
+        <p>Used for things that are <strong>permanent, regular, or always true</strong>. Think of it as the tense for habits, routines, and facts.</p>
+        
+        <h3>1. ROUTINES & HABITS</h3>
+        <p>Things you do regularly</p>
+        <div class="example-box">
+            <span class="check-mark">✓</span> I usually prepare lunch before heading out.
+        </div>
+        <div class="example-box">
+            <span class="check-mark">✓</span> She works at a hospital on weekends.
+        </div>
+        
+        <h3>2. PERMANENT FACTS</h3>
+        <p>Scientific truths or general knowledge</p>
+        <div class="example-box">
+            <span class="check-mark">✓</span> Water boils at 100 degrees Celsius.
+        </div>
+        <div class="example-box">
+            <span class="check-mark">✓</span> The sun rises in the east.
+        </div>
+        
+        <h3>3. FREQUENCY ADVERBS</h3>
+        <p><strong>Position in sentences:</strong></p>
+        <div class="important-note">
+            📌 <strong>BEFORE the main verbs:</strong> I <strong>never</strong> lie.<br>
+            📌 <strong>AFTER TO BE verbs:</strong> I <strong>am never</strong> late.
+        </div>
+        
+        <p><strong>Frequency words:</strong> Never, Rarely, Sometimes, Often, Usually, Always</p>
+        
+        <h3>4. TIME MARKERS</h3>
+        <p><strong>EVERY + time:</strong> every day, every week, every Monday<br>
+        <strong>Plural days:</strong> on Mondays, on weekends</p>
+        
+        <h3>Third Person Singular (He/She/It)</h3>
+        <div class="important-note">
+            ⚠ For: <strong>He, She, It, Their team, His car</strong> (Third Person Singular POV)<br>
+            Add <strong>-S</strong> or <strong>-ES</strong> to the verb
+        </div>
+        
+        <div class="grammar-formula">
+            POSITIVE: My sister plays the piano.<br>
+            NEGATIVE: My sister doesn't play the piano.<br>
+            QUESTION: Does she play the piano?
+        </div>
+        
+        <h3>WH-Questions in Present Simple</h3>
+        <div class="grammar-formula">
+            WH-WORD + DO/DOES + SUBJECT + VERB (base form) + ?
+        </div>
+        
+        <div class="example-box">
+            <span class="check-mark">✓</span> <strong>When</strong> does she go to piano class?
+        </div>
+        <div class="example-box">
+            <span class="check-mark">✓</span> <strong>Where</strong> do you work?
+        </div>
+        <div class="example-box">
+            <span class="check-mark">✓</span> <strong>What</strong> does he study?
+        </div>
+        <div class="example-box">
+            <span class="check-mark">✓</span> <strong>How many</strong> followers do you have on Instagram?
+        </div>
+        
+        <h3>CRITICAL RULE: Helping Verbs (افعال کمکی)</h3>
+        <div class="important-note">
+            ⚠ After ANY form of helping verbs, the verb is ALWAYS in BASE FORM (simple):<br>
+            <strong>DO / DOES / DID / MAY / WILL / MIGHT / CAN / COULD / SHALL / SHOULD / WOULD</strong>
+        </div>
+        
+        <div class="example-box">
+            <span class="check-mark">✓</span> I <strong>can speak</strong> three languages.
+        </div>
+        <div class="example-box">
+            <span class="check-mark">✓</span> She <strong>will arrive</strong> tomorrow.
+        </div>
+        <div class="example-box">
+            <span class="cross-mark">✗</span> I can speak<strong>s</strong> ← WRONG!
+        </div>
+
+        <!-- PRESENT CONTINUOUS -->
+        <div class="page-break"></div>
+        <h1>2. PRESENT CONTINUOUS (حال استمراری)</h1>
+        
+        <h2>The Purpose: Why Do We Use It?</h2>
+        <p>Shows actions happening <strong>NOW or AROUND NOW</strong>. It emphasizes progress or temporary situations.</p>
+        
+        <div class="grammar-formula">
+            SUBJECT + TO BE (am/is/are) + VERB-ING (GERUND)
+        </div>
+        
+        <div class="example-box">
+            I <strong>am writing</strong><br>
+            She <strong>is playing</strong> the piano<br>
+            They <strong>are studying</strong>
+        </div>
+        
+        <h3>Three Main Uses:</h3>
+        
+        <h3>1. RIGHT NOW</h3>
+        <div class="example-box">
+            <span class="check-mark">✓</span> Look! It's raining outside.
+        </div>
+        <div class="example-box">
+            <span class="check-mark">✓</span> She is playing the piano right now.
+        </div>
+        
+        <h3>2. THESE DAYS (Temporary situations - این روزها)</h3>
+        <div class="example-box">
+            <span class="check-mark">✓</span> I'm working on a new project with City Hall.
+        </div>
+        <div class="example-box">
+            <span class="check-mark">✓</span> She's learning Spanish this semester.
+        </div>
+        
+        <h3>3. FUTURE ARRANGEMENTS</h3>
+        <p>Fixed plans with: <strong>Activity + Person + Time + Location</strong></p>
+        <div class="example-box">
+            <span class="check-mark">✓</span> We're playing poker with friends this weekend at Mammad's garden.
+        </div>
+        
+        <h3>Question Forms</h3>
+        <div class="grammar-formula">
+            POSITIVE: She is playing the piano.<br>
+            NEGATIVE: She isn't playing the piano.<br>
+            YES/NO Q: Is she playing the piano?<br>
+            WH-Q: What instrument is she playing?
+        </div>
+        
+        <h3>Key Comparison</h3>
+        <table>
+            <tr>
+                <th>Present Simple</th>
+                <th>Present Continuous</th>
+            </tr>
+            <tr>
+                <td>Permanent / Regular</td>
+                <td>Temporary / In Progress</td>
+            </tr>
+            <tr>
+                <td class="example">I work in a bank.</td>
+                <td class="example">I'm working from home this week.</td>
+            </tr>
+        </table>
+
+        <!-- PAST SIMPLE -->
+        <div class="page-break"></div>
+        <h1>3. PAST SIMPLE (گذشته ساده)</h1>
+        
+        <h2>The Purpose: Why Do We Use It?</h2>
+        <p>Completed actions at a <strong>specific time in the past</strong>. The action is finished and disconnected from the present.</p>
+        
+        <h3>TIME MARKERS</h3>
+        <ul>
+            <li><strong>Yesterday</strong></li>
+            <li><strong>Last...</strong> (last week, last month, last year)</li>
+            <li><strong>...ago</strong> (2 years ago, 3 days ago)</li>
+            <li><strong>In + year</strong> (in 1989, in 2010)</li>
+        </ul>
+        
+        <h3>AGE EXPRESSIONS</h3>
+        <div class="example-box">
+            <strong>Early twenties (20-23)</strong> - اوایل بیست سالگی<br>
+            He became famous in his early twenties.
+        </div>
+        <div class="example-box">
+            <strong>Mid-twenties (24-26)</strong> - اواسط بیست سالگی<br>
+            He was a star in his mid-twenties.
+        </div>
+        <div class="example-box">
+            <strong>Late twenties (27-29)</strong> - اواخر بیست سالگی<br>
+            He released mega-hits in his late twenties.
+        </div>
+        
+        <h3>REGULAR VERBS (افعال قاعده)</h3>
+        <p>Add <strong>-D</strong> or <strong>-ED</strong></p>
+        <div class="example-box">
+            play → play<strong>ed</strong><br>
+            work → work<strong>ed</strong><br>
+            love → love<strong>d</strong>
+        </div>
+        
+        <h3>IRREGULAR VERBS</h3>
+        <div class="example-box">
+            go → <strong>went</strong><br>
+            see → <strong>saw</strong><br>
+            buy → <strong>bought</strong><br>
+            make → <strong>made</strong>
+        </div>
+        
+        <h3>Question Forms</h3>
+        <div class="grammar-formula">
+            POSITIVE: She played the piano at Sara's birthday last week.<br>
+            NEGATIVE: She didn't play the piano...<br>
+            YES/NO Q: Did she play the piano...?<br>
+            WH-Q: When did she play the piano at Sara's birthday?
+        </div>
+        
+        <h3>WH-Questions in Past Simple</h3>
+        <div class="grammar-formula">
+            WH-WORD + DID + SUBJECT + VERB (base form) + ?
+        </div>
+        
+        <div class="example-box">
+            <span class="check-mark">✓</span> <strong>When</strong> did she play the piano?
+        </div>
+        <div class="example-box">
+            <span class="check-mark">✓</span> <strong>Where</strong> did you go last summer?
+        </div>
+        <div class="example-box">
+            <span class="check-mark">✓</span> <strong>What</strong> did he say?
+        </div>
+
+        <!-- NARRATIVE TENSES -->
+        <div class="page-break"></div>
+        <h1>4. NARRATIVE TENSES: Past Simple & Past Continuous COLLISION</h1>
+        
+        <div class="intro-text">
+            <strong>NARRATIVE TENSES</strong> are used for storytelling:<br>
+            • Past Simple<br>
+            • Past Continuous<br>
+            • Past Perfect Simple<br>
+            • Past Perfect Progressive
+        </div>
+        
+        <h2>The Story Structure</h2>
+        <div class="important-note">
+            📌 <strong>Past Continuous:</strong> Sets the BACKGROUND scene (what was happening)<br>
+            📌 <strong>Past Simple:</strong> The INTERRUPTION (what suddenly happened)
+        </div>
+        
+        <h3>Pattern 1: WHILE + Past Continuous, Past Simple</h3>
+        <div class="example-box">
+            <span class="check-mark">✓</span> <strong>While I was crossing the street</strong>, someone called my name.
+        </div>
+        <div class="example-box">
+            وقتی داشتم از خیابون رد می‌شدم، یک نفر اسمم را صدا زد
+        </div>
+        
+        <h3>Pattern 2: Past Simple + WHEN + Past Continuous</h3>
+        <div class="example-box">
+            <span class="check-mark">✓</span> Someone called my name <strong>when I was crossing the street</strong>.
+        </div>
+        
+        <h3>Pattern 3: WHEN + Past Simple, Past Continuous</h3>
+        <div class="example-box">
+            <span class="check-mark">✓</span> <strong>When I was watching a film</strong>, my phone rang.
+        </div>
+        <div class="example-box">
+            <span class="check-mark">✓</span> <strong>When I arrived</strong>, they were having lunch.
+        </div>
+        
+        <h3>Pattern 4: WHILE + Past Continuous, Past Continuous</h3>
+        <div class="example-box">
+            <span class="check-mark">✓</span> <strong>While they were having lunch</strong>, I arrived.
+        </div>
+        
+        <h3>More Examples</h3>
+        <div class="example-box">
+            <span class="check-mark">✓</span> While I was watching TV, someone knocked on the door.
+        </div>
+        <div class="example-box">
+            <span class="check-mark">✓</span> She was cooking dinner when the power went out.
+        </div>
+
+        <!-- PRESENT PERFECT -->
+        <div class="page-break"></div>
+        <h1>5. PRESENT PERFECT (حال کامل)</h1>
+        
+        <h2>The Purpose: Why Do We Use It?</h2>
+        <p>Connects <strong>the past with the present</strong>. The timing is often unknown or the result is what matters now.</p>
+        
+        <div class="grammar-formula">
+            SUBJECT + HAVE/HAS + PAST PARTICIPLE (V3)
+        </div>
+        
+        <h3>Main Uses:</h3>
+        
+        <h3>1. LIFE EXPERIENCES</h3>
+        <div class="example-box">
+            <span class="check-mark">✓</span> I have visited Paris three times.
+        </div>
+        
+        <h3>2. RECENT ACTIONS (with present result)</h3>
+        <div class="example-box">
+            <span class="check-mark">✓</span> I've lost my keys. (I can't get in NOW)
+        </div>
+        
+        <h3>3. UNFINISHED TIME</h3>
+        <div class="example-box">
+            <span class="check-mark">✓</span> I've had two meetings today. (The day isn't over)
+        </div>
+
+        <!-- PRESENT PERFECT CONTINUOUS -->
+        <h1>6. PRESENT PERFECT CONTINUOUS</h1>
+        
+        <h2>The Purpose: Why Do We Use It?</h2>
+        <p>Emphasizes the <strong>duration and continuity</strong> of an action.</p>
+        
+        <div class="grammar-formula">
+            SUBJECT + HAVE/HAS + BEEN + VERB-ING
+        </div>
+        
+        <h3>Main Uses:</h3>
+        
+        <h3>1. DURATION</h3>
+        <div class="example-box">
+            <span class="check-mark">✓</span> I've been studying English for five years.
+        </div>
+        
+        <h3>2. EVIDENCE of recent activity</h3>
+        <div class="example-box">
+            <span class="check-mark">✓</span> You look tired. Have you been working out?
+        </div>
+
+        <!-- PHRASAL VERBS -->
+        <div class="page-break"></div>
+        <h1>7. ESSENTIAL PHRASAL VERBS</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Phrasal Verb</th>
+                    <th>Meaning</th>
+                    <th>Persian</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="expression">Give up</td>
+                    <td>Stop trying / Quit</td>
+                    <td>فعالیتی رو متوقف کردن و ترک کردن</td>
+                    <td class="example">Don't give up on your dreams!<br>I gave up on him. (ازش مایوس شدم)</td>
+                </tr>
+                <tr>
+                    <td class="expression">Carry on</td>
+                    <td>Continue</td>
+                    <td>ادامه دادن</td>
+                    <td class="example">Carry on with the lesson.</td>
+                </tr>
+                <tr>
+                    <td class="expression">Look forward to</td>
+                    <td>Anticipate eagerly</td>
+                    <td>مشتاقانه منتظر چیزی بودن</td>
+                    <td class="example">I'm looking forward to the weekend.</td>
+                </tr>
+                <tr>
+                    <td class="expression">Put off</td>
+                    <td>Postpone / Delay</td>
+                    <td>به تاخیر انداختن</td>
+                    <td class="example">Don't put off until tomorrow...</td>
+                </tr>
+                <tr>
+                    <td class="expression">Call off</td>
+                    <td>Cancel</td>
+                    <td>لغو کردن</td>
+                    <td class="example">They called off the wedding.<br>They called it off.</td>
+                </tr>
+                <tr>
+                    <td class="expression">Run out of</td>
+                    <td>Use all of something</td>
+                    <td>تمام شدن چیزی</td>
+                    <td class="example">We've run out of milk.</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="important-note">
+            📌 <strong>ALWAYS after حروف اضافه (prepositions) we have NOUN / GERUND (-ING)</strong><br>
+            FOR + noun/ing<br>
+            BEFORE / AFTER / AT / ON + noun/ing
+        </div>
+
+        <!-- PREPOSITION COLLOCATIONS -->
+        <div class="page-break"></div>
+        <h1>8. IMPORTANT PREPOSITION COLLOCATIONS</h1>
+        
+        <h3>EXPRESSING INTEREST & PREFERENCE</h3>
+        <div class="prep-section">
+            <div class="prep-title">INTERESTED IN = INTO = FOND OF = KEEN ON</div>
+            <div class="prep-meaning">All mean: "I LIKE"</div>
+            <div class="example-box">✓ I am interested in learning music.</div>
+            <div class="example-box">✓ I am interested in working with you more in the future.</div>
+            <div class="example-box">✓ I am into visual arts. (آیا به هنرهای بصری علاقه‌مندید)</div>
+            <div class="example-box">✓ I am fond of classical music.</div>
+            <div class="example-box">✓ Are you keen on vegie food?<br>
+            Responses: Yes, I am / You bet / Absolutely</div>
+        </div>
+        
+        <h3>COMMON PREPOSITION PATTERNS</h3>
+        
+        <div class="prep-section">
+            <div class="prep-title">DEPEND ON</div>
+            <div class="prep-meaning">To rely on; to need</div>
+            <div class="example-box">✓ Success depends on hard work.</div>
+            <div class="example-box">✓ You can depend on me.</div>
+        </div>
+        
+        <div class="prep-section">
+            <div class="prep-title">USE STH FOR STH</div>
+            <div class="prep-meaning">To utilize something for a purpose</div>
+            <div class="example-box">✓ What do you use the internet for?</div>
+            <div class="example-box">✓ I use my phone for studying.</div>
+        </div>
+        
+        <div class="prep-section">
+            <div class="prep-title">PAY FOR STH</div>
+            <div class="prep-meaning">To give money for something</div>
+            <div class="example-box">✓ I paid for dinner last night.</div>
+            <div class="example-box">✓ Who's going to pay for this?</div>
+        </div>
+        
+        <div class="prep-section">
+            <div class="prep-title">SPEND (TIME/ENERGY/MONEY) ON STH/SB</div>
+            <div class="prep-meaning">To use time, energy, or money for something/someone</div>
+            <div class="example-box">✓ I spend a lot of money on drugs.</div>
+            <div class="example-box">✓ She spends so much energy on her classes and students.</div>
+            <div class="example-box">✓ Don't spend too much time on social media.</div>
+        </div>
+        
+        <div class="prep-section">
+            <div class="prep-title">FAMOUS FOR</div>
+            <div class="prep-meaning">Well-known because of</div>
+            <div class="example-box">✓ Paris is famous for the Eiffel Tower.</div>
+            <div class="example-box">✓ Iran is famous for its carpets.</div>
+        </div>
+        
+        <div class="prep-section">
+            <div class="prep-title">RESPONSIBLE FOR</div>
+            <div class="prep-meaning">In charge of; accountable for</div>
+            <div class="example-box">✓ Who is responsible for this project?</div>
+            <div class="example-box">✓ Parents are responsible for their children.</div>
+        </div>
+        
+        <div class="prep-section">
+            <div class="prep-title">CONCENTRATE ON</div>
+            <div class="prep-meaning">To focus attention on</div>
+            <div class="example-box">✓ Please concentrate on the lesson.</div>
+            <div class="example-box">✓ I need to concentrate on my studies.</div>
+        </div>
+        
+        <!-- Additional prepositions from exercise -->
+        <div class="prep-section">
+            <div class="prep-title">SUCCEED IN</div>
+            <div class="prep-meaning">To achieve a goal</div>
+            <div class="example-box">✓ I succeeded in passing the exam.</div>
+        </div>
+        
+        <div class="prep-section">
+            <div class="prep-title">OPT FOR</div>
+            <div class="prep-meaning">To choose</div>
+            <div class="example-box">✓ Which method would you opt for?</div>
+        </div>
+        
+        <div class="prep-section">
+            <div class="prep-title">STEM FROM</div>
+            <div class="prep-meaning">To originate from</div>
+            <div class="example-box">✓ Do your problems stem from poor grammar?</div>
+        </div>
+        
+        <div class="prep-section">
+            <div class="prep-title">LACKING IN</div>
+            <div class="prep-meaning">Not have enough</div>
+            <div class="example-box">✓ Are you lacking in vocabulary?</div>
+        </div>
+        
+        <div class="prep-section">
+            <div class="prep-title">RIDDLED WITH</div>
+            <div class="prep-meaning">Full of (negative)</div>
+            <div class="example-box">✓ The text is riddled with errors.</div>
+        </div>
+        
+        <div class="prep-section">
+            <div class="prep-title">DISTINGUISH FROM</div>
+            <div class="prep-meaning">Recognize difference</div>
+            <div class="example-box">✓ What distinguishes your language from English?</div>
+        </div>
+        
+        <div class="prep-section">
+            <div class="prep-title">APPEAL TO</div>
+            <div class="prep-meaning">Be attractive to</div>
+            <div class="example-box">✓ What exercises appeal to you?</div>
+        </div>
+        
+        <div class="prep-section">
+            <div class="prep-title">BOTHER WITH/ABOUT</div>
+            <div class="prep-meaning">Make effort</div>
+            <div class="example-box">✓ Is it worth bothering with pronunciation?</div>
+        </div>
+        
+        <div class="prep-section">
+            <div class="prep-title">NERVOUS ABOUT</div>
+            <div class="prep-meaning">Worried about</div>
+            <div class="example-box">✓ Are you nervous about presentations?</div>
+        </div>
+        
+        <div class="prep-section">
+            <div class="prep-title">BENEFIT FROM</div>
+            <div class="prep-meaning">Gain advantage</div>
+            <div class="example-box">✓ How can you benefit from media?</div>
+        </div>
+
+        <!-- HOMEWORK SECTION -->
+        <div class="page-break"></div>
+        <h1>📚 YOUR HOMEWORK ASSIGNMENT</h1>
+        
+        <div class="intro-text">
+            Complete ALL exercises below before our next session. These exercises will help you master the grammar points we covered today.
+        </div>
+
+        <!-- Exercise 1 -->
+        <div class="homework-box">
+            <div class="homework-title">Exercise 1: Present Simple - Daily Routines</div>
+            <p><strong>Write 5 sentences about your daily routine using Present Simple.</strong></p>
+            <p>Include frequency adverbs (always, usually, often, sometimes, never) in your sentences.</p>
+            <p><em>Example: I usually wake up at 7 AM every morning.</em></p>
+            <ol>
+                <li>_________________________________________________</li>
+                <li>_________________________________________________</li>
+                <li>_________________________________________________</li>
+                <li>_________________________________________________</li>
+                <li>_________________________________________________</li>
+            </ol>
+        </div>
+
+        <!-- Exercise 2 -->
+        <div class="homework-box">
+            <div class="homework-title">Exercise 2: WH-Questions in Present Simple</div>
+            <p><strong>Create WH-questions using the words provided:</strong></p>
+            <ol>
+                <li>(Where / you / work) → _________________________________________________</li>
+                <li>(What time / she / start / work) → _________________________________________________</li>
+                <li>(How / they / go / to school) → _________________________________________________</li>
+                <li>(What / he / do / on weekends) → _________________________________________________</li>
+                <li>(How many / languages / you / speak) → _________________________________________________</li>
+            </ol>
+        </div>
+
+        <!-- Exercise 3 -->
+        <div class="homework-box">
+            <div class="homework-title">Exercise 3: Present Continuous - These Days</div>
+            <p><strong>Describe what you are doing these days (temporary situations).</strong></p>
+            <p>Write 3-4 sentences about current projects, studies, or activities.</p>
+            <p><em>Example: I'm learning to cook Persian food these days.</em></p>
+            <ol>
+                <li>_________________________________________________</li>
+                <li>_________________________________________________</li>
+                <li>_________________________________________________</li>
+                <li>_________________________________________________</li>
+            </ol>
+        </div>
+
+        <!-- Exercise 4 -->
+        <div class="homework-box">
+            <div class="homework-title">Exercise 4: Past Simple - Memorable Experiences</div>
+            <p><strong>Share 3 memorable experiences from your past with specific times.</strong></p>
+            <p>Use time markers like: last year, in 2020, 3 years ago, when I was...</p>
+            <p><em>Example: I traveled to Turkey last summer with my family.</em></p>
+            <ol>
+                <li>_________________________________________________</li>
+                <li>_________________________________________________</li>
+                <li>_________________________________________________</li>
+            </ol>
+        </div>
+
+        <!-- Exercise 5 -->
+        <div class="homework-box">
+            <div class="homework-title">Exercise 5: WH-Questions in Past Simple</div>
+            <p><strong>Create WH-questions in Past Simple:</strong></p>
+            <ol>
+                <li>(Where / you / go / last weekend) → _________________________________________________</li>
+                <li>(What / they / do / yesterday) → _________________________________________________</li>
+                <li>(When / she / graduate / from university) → _________________________________________________</li>
+                <li>(How / he / learn / English) → _________________________________________________</li>
+                <li>(Why / you / choose / this major) → _________________________________________________</li>
+            </ol>
+        </div>
+
+        <!-- Exercise 6 -->
+        <div class="homework-box">
+            <div class="homework-title">Exercise 6: Past Simple & Past Continuous COLLISION</div>
+            <p><strong>Combine the sentences using WHILE or WHEN:</strong></p>
+            
+            <p><strong>A. Use WHILE + Past Continuous, Past Simple:</strong></p>
+            <ol>
+                <li>I / walk home // it / start raining<br>
+                → _________________________________________________</li>
+                <li>She / study // her phone / ring<br>
+                → _________________________________________________</li>
+                <li>We / have dinner // the lights / go out<br>
+                → _________________________________________________</li>
+            </ol>
+            
+            <p><strong>B. Use WHEN + Past Simple, Past Continuous:</strong></p>
+            <ol start="4">
+                <li>The doorbell / ring // I / take a shower<br>
+                → _________________________________________________</li>
+                <li>He / arrive // we / watch a movie<br>
+                → _________________________________________________</li>
+                <li>My parents / call // I / do my homework<br>
+                → _________________________________________________</li>
+            </ol>
+            
+            <p><strong>C. Write 3 of your own collision sentences:</strong></p>
+            <ol start="7">
+                <li>_________________________________________________</li>
+                <li>_________________________________________________</li>
+                <li>_________________________________________________</li>
+            </ol>
+        </div>
+
+        <!-- Exercise 7 -->
+        <div class="homework-box">
+            <div class="homework-title">Exercise 7: Present Perfect - Life Experiences</div>
+            <p><strong>Tell me about 5 things you have done in your life (experiences).</strong></p>
+            <p>Don't mention specific times - focus on the experience itself.</p>
+            <p><em>Example: I have visited three different countries.</em></p>
+            <ol>
+                <li>_________________________________________________</li>
+                <li>_________________________________________________</li>
+                <li>_________________________________________________</li>
+                <li>_________________________________________________</li>
+                <li>_________________________________________________</li>
+            </ol>
+        </div>
+
+        <!-- Exercise 8 -->
+        <div class="homework-box">
+            <div class="homework-title">Exercise 8: Phrasal Verbs Practice</div>
+            <p><strong>Use these phrasal verbs in your own sentences:</strong></p>
+            <ul>
+                <li>give up</li>
+                <li>carry on</li>
+                <li>look forward to</li>
+                <li>put off</li>
+                <li>call off</li>
+                <li>run out of</li>
+            </ul>
+            <ol>
+                <li>(give up) → _________________________________________________</li>
+                <li>(carry on) → _________________________________________________</li>
+                <li>(look forward to) → _________________________________________________</li>
+                <li>(put off) → _________________________________________________</li>
+                <li>(call off) → _________________________________________________</li>
+                <li>(run out of) → _________________________________________________</li>
+            </ol>
+        </div>
+
+        <!-- Exercise 9 -->
+        <div class="homework-box">
+            <div class="homework-title">Exercise 9: Preposition Collocations</div>
+            <p><strong>Complete the sentences with the correct prepositions:</strong></p>
+            <ol>
+                <li>I am very interested _____ learning photography.</li>
+                <li>Success depends _____ hard work and dedication.</li>
+                <li>What do you use your smartphone _____?</li>
+                <li>I spend a lot of time _____ social media.</li>
+                <li>Iran is famous _____ its rich history and culture.</li>
+                <li>Who is responsible _____ this project?</li>
+                <li>Please concentrate _____ your studies.</li>
+                <li>Do you think you'll succeed _____ passing the exam?</li>
+                <li>Which option would you opt _____?</li>
+                <li>Do your problems stem _____ lack of practice?</li>
+                <li>Are you lacking _____ confidence?</li>
+                <li>The essay was riddled _____ mistakes.</li>
+                <li>What distinguishes English _____ your native language?</li>
+                <li>Does this idea appeal _____ you?</li>
+                <li>Is it worth bothering _____ small details?</li>
+                <li>Are you nervous _____ giving presentations?</li>
+                <li>Students benefit _____ regular practice.</li>
+                <li>I am keen _____ learning new skills.</li>
+                <li>She is fond _____ classical music.</li>
+                <li>We paid _____ the meal last night.</li>
+            </ol>
+        </div>
+
+        <!-- Exercise 10 -->
+        <div class="homework-box">
+            <div class="homework-title">Exercise 10: Create Your Own Sentences</div>
+            <p><strong>Write original sentences using these preposition expressions:</strong></p>
+            <ol>
+                <li>interested in: _________________________________________________</li>
+                <li>depend on: _________________________________________________</li>
+                <li>spend...on: _________________________________________________</li>
+                <li>famous for: _________________________________________________</li>
+                <li>responsible for: _________________________________________________</li>
+                <li>look forward to: _________________________________________________</li>
+                <li>keen on: _________________________________________________</li>
+                <li>fond of: _________________________________________________</li>
+            </ol>
+        </div>
+
+        <!-- Answer Key Section -->
+        <div class="page-break"></div>
+        <h1>🔑 ANSWER KEY - Exercise 9 (Prepositions)</h1>
+        
+        <div class="answer-key">1. interested <strong>IN</strong> learning photography</div>
+        <div class="answer-key">2. depends <strong>ON</strong> hard work</div>
+        <div class="answer-key">3. use your smartphone <strong>FOR</strong></div>
+        <div class="answer-key">4. spend time <strong>ON</strong> social media</div>
+        <div class="answer-key">5. famous <strong>FOR</strong> its rich history</div>
+        <div class="answer-key">6. responsible <strong>FOR</strong> this project</div>
+        <div class="answer-key">7. concentrate <strong>ON</strong> your studies</div>
+        <div class="answer-key">8. succeed <strong>IN</strong> passing</div>
+        <div class="answer-key">9. opt <strong>FOR</strong></div>
+        <div class="answer-key">10. stem <strong>FROM</strong> lack of practice</div>
+        <div class="answer-key">11. lacking <strong>IN</strong> confidence</div>
+        <div class="answer-key">12. riddled <strong>WITH</strong> mistakes</div>
+        <div class="answer-key">13. distinguishes English <strong>FROM</strong> your native language</div>
+        <div class="answer-key">14. appeal <strong>TO</strong> you</div>
+        <div class="answer-key">15. bothering <strong>WITH/ABOUT</strong> small details</div>
+        <div class="answer-key">16. nervous <strong>ABOUT</strong> giving presentations</div>
+        <div class="answer-key">17. benefit <strong>FROM</strong> regular practice</div>
+        <div class="answer-key">18. keen <strong>ON</strong> learning</div>
+        <div class="answer-key">19. fond <strong>OF</strong> classical music</div>
+        <div class="answer-key">20. paid <strong>FOR</strong> the meal</div>
+
+        <!-- Final Message -->
+        <div class="intro-text" style="margin-top: 50px; text-align: center; font-size: 20px; padding: 30px;">
+            <strong style="font-size: 28px; color: #2E5C8A;">💪 Practice Makes Perfect!</strong><br><br>
+            The key to mastering English tenses is understanding <em>why</em> and <em>when</em> to use each one, not just memorizing formulas. Think about the context and purpose behind each sentence.<br><br>
+            <strong style="font-size: 24px; color: #E65100;">Complete ALL homework exercises before next session!</strong><br><br>
+            <strong style="font-size: 22px; color: #2E5C8A;">See you in the next session! 🌟</strong><br>
+            <em style="color: #666;">Ben Siran Academy - Where Excellence Meets Opportunity</em>
+        </div>
+
+    </div>
+</body>
+</html>        margin: 10px 0 10px 40px;
             color: #2C5F2D;
             font-size: 15px;
         }
